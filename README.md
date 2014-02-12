@@ -1,4 +1,4 @@
-= Prerequisites =
+_Prerequisites_
 
 * ruby v 2.0 
 * gems required [activerecord,mysql2,json]
