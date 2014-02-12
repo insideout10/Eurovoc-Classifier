@@ -10,11 +10,7 @@ all=Dataset.all
 print "this process may take some time please be patiant"
 
 all.each_with_index do |e,i|
-	#my path 
-	path="https://api.redlink.io/1.0-ALPHA/analysis/eu/enhance?key=j3dMN8spIzMYwfu5udTt0uN2A4f2AnpUd6e5eaef"
-	#david path
-	#path="https://api.redlink.io/1.0-ALPHA/analysis/eurovoc/enhance?key=nbtyge7E2hzJ1OGjz0Ip6Aetk3sFSI3fcdd69303"
-	#puts limit.class
+	path="https://api.redlink.io/1.0-ALPHA/analysis/<Add analysis Id>/enhance?key=<Get Your Key from Redlink.co>"
 	uri = URI.parse(path)
 	https = Net::HTTP.new(uri.host,uri.port)
 	https.use_ssl = true
