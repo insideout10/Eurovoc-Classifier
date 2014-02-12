@@ -22,6 +22,13 @@ ActiveRecord::Base.establish_connection(
   password: ''
 )
 ```
+also please add your key and you analysis-id in analysis.rb file
+
+```
+path="https://api.redlink.io/1.0-ALPHA/analysis/<Add analysis Id>/enhance?key=<Get Your Key from Redlink.co>"
+
+```
+
 
 To fetch data from online resource 
 ```sh
